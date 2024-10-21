@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f9d423, #ff4e50, #e55d87, #5fc3e4); /* More vibrant gradient with a mix of yellow, red, pink, and blue */
+    color: #fff;
+    padding-top: 4%;
+    padding-left: 10%;
+    transition: background 0.5s ease-in-out;
+}
+.container:hover{
+    background: linear-gradient(135deg, #00f260, #0575e6, #ff6e7f, #b24592); /* Interactive gradient on hover */
+}
+.container h1{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffe259; /* Bright yellow for the heading */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+.container h1 img{
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid #fff; /* Circular image with border */
+}
+.container button img{
+    width: 25px;
+    margin-right: 8px;
+}
+.container button{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ff6b6b, #f0e130); /* Gradient with red to yellow */
+    color: #fff;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for effect */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition for background and hover effect */
+}
+.container button:hover{
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59); /* Dynamic hover color with multiple shades */
+    transform: translateY(-5px); /* Button lifts up slightly on hover */
+}
+.input-box, .input-box1{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft pink gradient for inputs */
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for input boxes */
+    border: 3px solid #f67280; /* Thicker, colorful border */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Hover effects for inputs */
+}
+.input-box:hover, .input-box1:hover{
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+.input-box img, .input-box1 img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth hover animation for icons */
+}
+.input-box img:hover, .input-box1 img:hover{
+    transform: scale(1.3) rotate(15deg); /* Icons enlarge and rotate slightly on hover */
+}
